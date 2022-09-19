@@ -1,0 +1,175 @@
+@font-face {
+    font-family:'restaurantfont';
+    src: url(../assets/fonts/fontawesome-webfont.eot);
+    src: url(../assets/fonts/ufonts.com_tw-cen-mt.ttf);
+}
+
+body {
+    font-family: restaurantfont;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main{
+    position: relative;
+}
+
+/* NEWSLETTER */
+
+img{
+    background-attachment: fixed;
+    position: relative;
+    
+    background-position: right;
+    /* max-width: 100vw; */
+    z-index: 0;
+}
+
+h3{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+strong{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 50px;
+    font-style: normal;
+    color: #ff530a;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    
+}
+
+hr{
+    width: 10%;
+    border: solid 0.5px white;
+    margin: 20px;
+    
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px 30px 30px 30px;
+    height: 50vh;
+    overflow: hidden;
+    color: white;
+    background-image: url(../assets/images/subscribe-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.news::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/overlay-pattern2.png);
+    background-color: rgb(0,0,0,0.1);
+}
+
+form{
+    margin-top: 20px;
+}
+
+input{
+    margin:0px;
+    margin-right: -5px;
+    height: 65px;
+    padding:12px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: rgb(118, 118, 118);
+    font-family: restaurantfont;
+    font-weight: 400;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+form button{
+    margin:0px;
+    height: 65px;
+    width: 200px;
+    border:none;
+    background-color: #7ec3bb;
+    font-family: restaurantfont;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    font-style: normal;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+/* CONTACT US */
+
+h4{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    font-style: normal;
+    color: black;
+    text-align: left;
+}
+
+.contact{   
+    display: flex;
+    flex-direction: column;        flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: center;        box-sizing: border-box;        padding: 50px 30px 30px 30px;
+    height: 50vh;
+    overflow: hidden;
+    background-color: white;
+    background-image: none;
+}
+
+
+/* FOOTER */
+
+footer{
+    padding: 5% ;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.block{
+    width: 33%;
+    padding: 0 3%;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.contact input{
+    width: 100%;
+    border: solid 1px black;
+}
