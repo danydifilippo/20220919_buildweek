@@ -1,3 +1,4 @@
+
 @font-face {
     font-family:'restaurantfont';
     src: url(../assets/fonts/fontawesome-webfont.eot);
@@ -64,6 +65,15 @@ body {
 #aboutus img {
     margin: 6rem auto 2rem auto;
 }
+
+#aboutus h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #2e2e2e;
+    margin: 0 auto;
+}
+
 #menu h1 {
     font-size: 36px;
     font-weight: 500;
@@ -158,4 +168,4 @@ section::before {
 }
 header {
     position: relative;
-}
+} 
