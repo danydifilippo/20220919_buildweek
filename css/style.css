@@ -63,16 +63,18 @@ body {
 #aboutus img {
     margin: 6rem auto 2rem auto;
 }
-
-#aboutus h1 {
+#menu h1 {
     font-size: 36px;
     font-weight: 500;
     line-height: 40px;
     color: #2e2e2e;
     margin: 0 auto;
 }
-
 #aboutus span {
+    text-align: center;
+}
+
+#menu h1 span {
     font-size: 45px;
     font-weight: 600;
     line-height: 50px;
@@ -93,4 +95,12 @@ body {
     line-height: 26px;
     color: #959595;
     padding: 0rem 7rem 2.5rem 7rem ;
+}
+#menu hr {
+    text-align: center;
+    margin: 2.rem auto;
+    width: 130px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9d9d9d;
 }
