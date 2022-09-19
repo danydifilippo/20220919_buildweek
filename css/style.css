@@ -44,12 +44,12 @@ li {
 li:hover {
     border-bottom: 2px solid red;
 }
-section {
+.header_sec {
     position: relative;
     display: flex;
     justify-content: center;
 }
-section::before {
+.header_sec::before {
     content: "";
     position: absolute;
     left: 0;
