@@ -1,0 +1,35 @@
+@font-face {
+    font-family:'restaurantfont';
+    src: url(../assets/fonts/fontawesome-webfont.eot);
+    src: url(../assets/fonts/ufonts.com_tw-cen-mt.ttf);
+}
+
+body {
+    font-family: restaurantfont;
+    box-sizing: border-box;
+}
+
+#menu h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #2e2e2e;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu h1 span {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #ff530a;
+}
+
+#menu hr {
+    text-align: center;
+    margin: 2.rem auto;
+    width: 130px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9d9d9d;
+}
