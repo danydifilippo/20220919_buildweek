@@ -6,3 +6,18 @@ body {
     max-width: 100%;
     height: auto;
 }
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li {
+    margin: 0px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
