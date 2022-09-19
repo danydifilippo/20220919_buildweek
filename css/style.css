@@ -12,6 +12,9 @@ body {
 #aboutus {
     text-align: center;
     background-color: #f6f6f6;
+}
+
+#aboutus div {
     max-width: 1140px;
     margin: 0 auto;
 }
