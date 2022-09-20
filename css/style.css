@@ -153,7 +153,7 @@ body {
     background: rgba(255, 255, 255, 0.89);
     position: absolute;
     bottom: -32px;
-    width: 75vw;
+    width: 73.5vw;
     padding-top: 20px;
 }
 ul {
@@ -194,20 +194,41 @@ header {
 } 
 /* FINE HEADER */
 /* SLIDER */
+#slider {
+    padding: 30px 0px;
+}
 .slider-container {
     margin-block: 50px;
     margin-inline: auto;
-    width: 1170px;
+    width: 1060px;
 }
 .slider-immagini {
     overflow: hidden;
     display: flex;
 }
+.slider-immagini img {
+    width: 235px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
 .slider-titolo h3 {
-    font-size: 36px;
+    font-weight: 600;
+    font-size: 20px;
     text-transform: uppercase;
 }
 .slider-titolo span {
-    font-size: 36px;
     color: #ff530a;
 }
+.slider-dots {
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #ff530a;
+    border-radius: 50%;
+    display: inline-block;
+  }
