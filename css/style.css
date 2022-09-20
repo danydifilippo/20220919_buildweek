@@ -99,16 +99,16 @@ body {
     color: #ff530a;
 }
 
-#menu h1 {
+#menu-title h1 {
     font-size: 36px;
     font-weight: 500;
     line-height: 40px;
     color: #2e2e2e;
-    margin: 0 auto;
+    margin-top: 6.9rem;
     text-align: center;
 }
 
-#menu h1 span {
+#menu-title h1 span {
     font-size: 45px;
     font-weight: 600;
     line-height: 50px;
@@ -130,14 +130,86 @@ body {
     color: #959595;
     padding: 0rem 7rem 2.5rem 7rem ;
 }
-#menu hr {
+#menu-title hr {
     text-align: center;
-    margin: 2.rem auto;
+    margin: 2.5rem auto;
     width: 130px;
     font-size: 16px;
     font-weight: 400;
     color: #9d9d9d;
 }
+#menu-title p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #959595;
+    margin: 0 12% ;
+}
+.lista-piatti {
+    position: relative;
+}
+.bordo-bottom {
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    border: 1px dotted #c9c7c7;
+    z-index: 0;
+}
+.lista-title {
+   display: inline-block;
+   margin: auto 0;
+   background-color: white;
+   position: relative;
+   z-index: 1;
+}
+.lista-price {
+    float: right;   
+}
+.lista-price p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #938463;
+}
+#lista h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #2e2e2e;
+    margin-top: 7rem;
+}
+#lista h2 span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #ff5333;
+}
+#lista h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #333333;
+    margin-bottom: 0px;
+}
+#lista p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #959595;
+}
+#menu button {
+    font-size: 15px;
+    font-weight: 600;
+    color: #FF4F02;
+    padding: 30px 99px;
+    border-radius: 0px;
+    background: white;
+    border: 1px solid #FF4F02;
+    margin: 2rem 0 3.5rem 0;
+    float: right;
+}
+
 .img-header {
     max-width: 100%;
     height: auto;
