@@ -4,95 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+    <title>Restaurant Home</title>
+    <script src="https://kit.fontawesome.com/671abf387b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div style="height: 100vh"></div>
+    <div class="null"></div>
+
+    <!-- ---------------------------- -->
+    <!-- Mattia's code here-->
     <!-- NEWSLETTER -->
-    <main>
-      <section class="news">
-        <!-- img src="../assets/images/subscribe-bg.jpg" alt="" -->
+    <section class="news">
+      <div class="container">
         <h3>SUBSCRIBE <strong>to our</strong> NEWSLETTER</h3>
         <hr />
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
         <form action="">
           <input type="mail" placeholder="Enter your email to subscribe..." />
-          <button>Subscribe</button>
+          <input class="submit" type="submit" value="Subscribe" />
         </form>
-      </section>
+      </div>
+    </section>
 
-      <!-- CONTACT US -->
-      <section class="contact">
-        <h3>our <strong>CONTACT US</strong></h3>
-        <h4>SIGN UP FOR <span>EMAIL ALERTS</span></h4>
-        <form>
-          <input type="text" placeholder="Write your full name here..." />
-          <input type="email" placeholder="Write your email address here..." />
-          <input type="text" placeholder="Write your message here..." />
-          <input type="submit" value="Send your message" />
-        </form>
-      </section>
+    <!-- CONTACT US -->
+    <section class="contact">
+      <h3>our <strong>CONTACT US</strong></h3>
 
-      <div style="height: 100vh"></div>
-    </main>
+      <hr />
+
+      <h4>SIGN UP FOR <span>EMAIL ALERTS</span></h4>
+      <form>
+        <input type="text" placeholder="Write your full name here..." />
+        <input type="email" placeholder="Write your email address here..." />
+        <input type="text" placeholder="Write your message here..." />
+        <input class="submit" type="submit" value="Send your message" />
+      </form>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
       <div class="footer-content">
         <div class="block">
-          <h4>CONTACT INFO</h4>
+          <h4>CONTACT <span>INFO</span></h4>
           <div>
-            <h4>Telefone</h4>
+            <h6><i class="fas fa-map-marker-alt"></i> <span>Telefone</span></h6>
             <p>(000) 123 456 78- (000) 123 4567 89</p>
           </div>
-
           <div>
-            <h4>Telefone</h4>
-            <p>(000) 123 456 78- (000) 123 4567 89</p>
+            <h6><i class="fas fa-phone-alt"></i> <span>Address</span></h6>
+            <p>2046 Blue Spruce Lane Laurel Canada</p>
           </div>
-
           <div>
-            <h4>Telefone</h4>
-            <p>(000) 123 456 78- (000) 123 4567 89</p>
+            <h6><i class="fas fa-envelope"></i> <span>E mail</span></h6>
+            <p>rest@gmail.com - rest@mail.ru</p>
           </div>
         </div>
 
         <div class="block">
-          <h4>LATEST BLOG POSTS</h4>
+          <h4>LATEST <span>BLOG POSTS</span></h4>
           <div>
-            <h4>Telefone</h4>
-            <p>(000) 123 456 78- (000) 123 4567 89</p>
+            <h4><span>Nov 9-2014</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
           </div>
 
           <div>
-            <h4>Telefone</h4>
-            <p>(000) 123 456 78- (000) 123 4567 89</p>
+            <h4><span>Sep 8-2014</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
           </div>
         </div>
 
         <div class="block">
-          <h4>PHOTO STREAM</h4>
-          <div>
-            <img src="../assets/images/photo/photo-1.jpg" alt="" />
+          <h4>PHOTO <span>STREAM</span></h4>
+          <div class="stream">
+            <div>
+              <img src="../assets/images/photo/photo-1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="../assets/images/photo/photo-2.jpg" alt="" />
+            </div>
+            <div>
+              <img src="../assets/images/photo/photo-3.jpg" alt="" />
+            </div>
+            <div>
+              <img src="../assets/images/photo/photo-4.jpg" alt="" />
+            </div>
           </div>
           <div>
-            <img src="../assets/images/photo/photo-2.jpg" alt="" />
-          </div>
-          <div>
-            <img src="../assets/images/photo/photo-3.jpg" alt="" />
-          </div>
-          <div>
-            <img src="../assets/images/photo/photo-4.jpg" alt="" />
-          </div>
-
-          <div>
-            <h4>Follow US</h4>
-            <p>(000) 123 456 78- (000) 123 4567 89</p>
+            <h4>Follow <span>US</span></h4>
+            <div class="social">
+              <div class="icon">
+                <i class="fa fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa fa-facebook"></i>
+              </div>
+              <div class="icon">
+                <i class="fa fa-dribbble"></i>
+              </div>
+              <div class="icon">
+                <i class="fa fa-behance"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <p>Copyright © 2014 - All Rights Reserved.Design and Developed By 💪 Team 3</p>
+      <div class="copyright">
+        <p>Copyright © 2014 - All Rights Reserved.Design and Developed By 💪 <span>Team 3</span></p>
+      </div>
     </footer>
   </body>
 </html>
