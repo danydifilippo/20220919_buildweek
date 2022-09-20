@@ -16,16 +16,14 @@ body {
 }
 #nav-bar {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 40px;
+    padding: 25px 46px;
     background: rgba(255, 255, 255, 0.89);
     position: absolute;
-    bottom: -32px;
-    width: 75vw;
-    margin-inline: 11%;
+    bottom: -37px;
+    width: 73vw;
 }
 ul {
     list-style-type: none;
@@ -58,7 +56,7 @@ li:hover {
     height: 100%;
     background: url(../images/overlay-pattern.png);
     background: black;
-    opacity: 0.3;
+    opacity: 0.25;
 }
 header {
     position: relative;
