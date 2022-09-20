@@ -10,8 +10,6 @@ body {
     margin: 0;
 }
 
-
-
 .null{
     height: 30vh;
     color: black;
@@ -107,7 +105,7 @@ body {
     margin-top: 5px;
 }
 
-/* .container input, .contact-us */input{ 
+input{ 
     margin:0px;
     margin-right: -5px;
     height: 65px;
@@ -145,6 +143,10 @@ textarea{
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.submit:hover{
+    background-color: #53afa4;
 }
 
 /* CONTACT US */
@@ -230,6 +232,11 @@ footer{
 .block h4, .block h6, .block p{
     margin: 0;
     margin-top: 10px;
+    color: #454545;
+}
+
+.fas{
+    margin-left: 5px;
 }
 
 footer p{
@@ -260,11 +267,12 @@ footer p{
     display: flex;
 }
 
-.copyright{
+.copyright p{
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;
     color: #454545;
     background-color: #e9e9e9;
-    padding: 20px;
+    padding: 35px 20px 20px 20px;
+    letter-spacing: 2px;
 }
