@@ -155,7 +155,7 @@ section {
     display: flex;
     justify-content: center;
 }
-section::before {
+.header_sec::before {
     content: "";
     position: absolute;
     left: 0;
