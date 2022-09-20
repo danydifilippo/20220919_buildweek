@@ -2,9 +2,9 @@ window.onscroll = function () {
   myFunction();
 };
 
-var navbar = document.getElementById("nav-bar");
+let navbar = document.getElementById("nav-bar");
 
-var sticky = navbar.offsetTop;
+let sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
