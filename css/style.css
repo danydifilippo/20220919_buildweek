@@ -20,6 +20,7 @@ body {
     background-size: cover;
     display: flex;
     align-items: center;
+    height: 83vh;
 }
 
 
@@ -40,6 +41,8 @@ body {
 .blog h2{
     font-size: 36px;
     color: white;
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .blog h2 span{
@@ -59,16 +62,30 @@ body {
     flex-basis: 25%;
 }
 
+.title_dish {
+    padding: 0 90px;
+    line-height: 25px;
+}
+
+.descr_dish {
+    padding: 0 30px;
+    color: #959595;
+    line-height: 25px;
+}
+
 .blogtable hr {
     width: 130px;
-    font-size: 16px;
-    font-weight: 400;
     color: #959595;
+    
+}
+
+.dish hr {
+    padding: 0;
 }
 
 #imgblog {
     width: 81.6%;
-    margin: 2em auto;
+    margin: 2.5em auto;
 }
 
 #aboutus {
