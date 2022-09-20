@@ -52,6 +52,24 @@ body {
     flex-direction: row;
     background-color: white;
 } 
+.dish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 25%;
+}
+
+.blogtable hr {
+    width: 130px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #959595;
+}
+
+#imgblog {
+    width: 81.6%;
+    margin: 2em auto;
+}
 
 #aboutus {
     text-align: center;
