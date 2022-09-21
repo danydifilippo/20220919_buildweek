@@ -372,9 +372,13 @@ body {
     background: rgba(255, 255, 255, 0.89);
     position: absolute;
     bottom: -32px;
-    width: 73.5vw;
+    width: 1060px;
     padding-top: 20px;
     z-index: 1;
+}
+#nav-bar a {
+    text-decoration: none;
+    color: #2E2E2E;
 }
 ul {
     list-style-type: none;
