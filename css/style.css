@@ -11,7 +11,7 @@ body {
     box-sizing: border-box;
 }
 
-.blog {
+#blog {
     position: relative;
     text-align: center;
     background-image: url(../assets/images/blog/blog-bg.jpg);
@@ -20,11 +20,11 @@ body {
     background-size: cover;
     display: flex;
     align-items: center;
-    height: 150vh;
+    height: 100vh;
 }
 
 
-.blog::before {
+#blog::before {
     font-family: restaurantfont;
     box-sizing: border-box;
     margin: 0;
@@ -107,17 +107,19 @@ body {
 
 .blogtable {
     position: relative;
-    height: 74vh;
-    width: 91vw;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: 4em;
 }
-.blog h2{
+#blog h2{
     font-size: 36px;
     color: white;
     margin-top: 2em;
     margin-bottom: 1em;
 }
 
-.blog h2 span{
+#blog h2 span{
     font-size: 45px;
     color: #ff530a;
 }
@@ -139,6 +141,7 @@ body {
     width: 285px;
     height: 220px;
     position: relative;
+    text-align: center;
 }
 
 
@@ -150,11 +153,10 @@ body {
     transform: rotate(45deg);
     right: 95%;
     top: 40%;
-    z-index: 10;
 }
 
 #sq_ctr {
-    right: 5%;
+    right: 95%;
 }
 
 .title_dish {
@@ -170,7 +172,8 @@ body {
 
 .blogtable hr {
     width: 130px;
-    color: #959595;   
+    color: #959595;
+   
 }
 
 .dish hr {
@@ -187,6 +190,17 @@ body {
     background-color: #ff530a;
     color: white;
     text-decoration: none;
+    float: right;
+    padding: 2em 3em;
+    width: 189px;
+}
+
+.dish img {
+    transition: 2s ease-in-out;
+}
+
+.dish img:hover {
+    transform: rotate(30deg) scale(1);
 }
 
 #aboutus {
