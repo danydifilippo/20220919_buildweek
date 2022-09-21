@@ -6,14 +6,13 @@ window.onload = function () {
 };
 
 window.onscroll = function () {
-  with (fixId.style) {
+  console.log(window.pageYOffset, fixTop)
     if (window.pageYOffset > fixTop) {
-      position = "fixed";
-      top = "0px";
-      height = "55px";
+      fixId.style.position = "fixed";
+      fixId.style.top = "0px";
     } else {
-      position = "absolute";
-      top = "84%";
+      fixId.style.position = "absolute";
+      fixId.style.bottom = "0px";
+      fixId.style.top = "unset";
     }
-  }
-};
+}

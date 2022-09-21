@@ -97,7 +97,6 @@ body {
     background-size: cover;
     display: flex;
     align-items: center;
-    height: 100vh;
 }
 
 
@@ -194,7 +193,15 @@ body {
     text-decoration: none;
     padding: 2em 3em;
     width: 189px;
+    transition:1s;
 }
+
+#but_info:hover {
+    background-color: transparent; 
+    color: #ff530a;
+    border: 1px solid #ff530a;
+}
+
 
 .rowblog:hover .dish img {
     transform: scale(1.5) rotate(10deg);
@@ -337,22 +344,28 @@ body {
     color: #959595;
 }
 
+
 .more-info {
+    text-align: center;
+    margin: 2em 0;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
-#menu button {
-    font-size: 15px;
-    font-weight: 600;
-    color: #FF4F02;
-    padding: 30px 99px;
-    border-radius: 0px;
-    background: white;
-    border: 1px solid #FF4F02;
-    margin: 2rem 0 3.5rem 0;
+#but_info_2 {
+    background-color: transparent; 
+    color: #ff530a;
+    border: 1px solid #ff530a;
+    transition:1s;
+    text-decoration: none;
+    padding: 2em 3em;
+    width: 189px;
 }
 
+#but_info_2:hover {
+    background-color: #ff530a; 
+    color: white;
+}
 
 .img-header {
     max-width: 100%;
@@ -370,8 +383,8 @@ body {
     position: absolute;
     bottom: -32px;
     width: 1060px;
-    padding-top: 20px;
-    z-index: 1;
+    height: 70px;
+    z-index: 10;
 }
 #nav-bar a {
     text-decoration: none;
