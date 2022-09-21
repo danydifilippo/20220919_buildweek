@@ -544,14 +544,15 @@ footer{
     margin: 5px;
     box-sizing: border-box;
 }
-.block div{
-    margin:20px 0;
-}
 
 .block h4, .block h6, .block p{
     margin: 0;
-    margin-top: 10px;
+    margin-top: 20px;
     color: #454545;
+}
+
+.block-content{
+    padding-top: 30px;
 }
 
 .fas{
@@ -570,11 +571,12 @@ footer p{
 .stream{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .icon{
-    margin-right: 30px;
-    padding: 10px;
+    margin-right: 20px;
+    padding: 15px;
     height: 15px;
     width: 15px;
     color: white;
@@ -584,6 +586,7 @@ footer p{
 }
 .social{
     display: flex;
+    margin-top: 30px;
 }
 
 .copyright p{
