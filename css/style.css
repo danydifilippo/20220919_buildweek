@@ -152,7 +152,7 @@ body {
     background-color: white;
     position: absolute;
     transform: rotate(45deg);
-    right: 95%;
+    right: -5%;
     top: 40%;
 }
 
