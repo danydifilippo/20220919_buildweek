@@ -570,8 +570,15 @@ footer p{
 
 .stream{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.stream img{
+    padding: 5px;
+
 }
 
 .icon{
@@ -597,4 +604,268 @@ footer p{
     background-color: #e9e9e9;
     padding: 35px 20px 20px 20px;
     letter-spacing: 2px;
+}
+
+
+/* --------------------------------------------------
+RESPONSIVE MATTIA
+-------------------------------------------------- */
+
+
+@media screen and (max-width: 1010px) {
+
+    /* CONTACT US */
+
+    .contact-us{ 
+        padding: 50px 0px 30px 0px;
+        width: 100%;
+    }
+
+    .contact-us input, .contact-us textarea{
+        width: 95%;
+    }
+
+    .contact-us .submit{
+        width: 50%;
+        margin-top: 10px;
+        margin-right: 2.3%;
+    }
+
+    .contact-us hr{
+        width: 15%;
+    }
+
+    .contact-us h4{
+        margin-left: 2.5%;
+    }
+
+     /* FOOTER */
+    
+    .footer-content{
+        padding: 50px 0;
+        display: flex;
+    }
+
+    .block{
+        width: 33%;
+        padding: 0 2%;
+    }
+
+    .stream img{
+        padding: 3px;
+    }
+    .icon{
+        margin-right: 15px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+
+    /* TYPOGRAPHY */
+
+    .news h3, .contact-us h3, footer h3{
+        font-size: 30px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+
+    .news h4, .contact-us h4, footer h4{
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .news h6, .contact-us h6, footer h6{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .news strong, .contact-us strong, footer strong{
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .news p, .contact-us p{
+        font-size: 18px;
+        line-height: 20px;
+        
+    }
+
+
+/* NEWSLETTER */
+
+    .news{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        padding: 100px 5%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    input{ 
+        margin:0px;
+        height: 65px;
+        padding:12px;
+        width: 100%;
+        color: #949692;
+    }
+
+    .container form{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    
+    .submit{
+        margin-top: 20px;
+        height: 65px;
+        width: 200px;
+        border:none;
+        background-color: #7ec3bb;
+        font-family: restaurantfont;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 23px;
+        font-style: normal;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+
+    /* CONTACT US */
+
+    .contact-us{ 
+        padding: 50px 0px 30px 0px;
+        width: 100%;
+    }
+
+    .contact-us input, .contact-us textarea{
+        width: 95%;
+    }
+
+    .contact-us .submit{
+        width: 40%;
+        margin-right: 2.3%;
+        float:none; /* <--da cambiare la visualizzazione qui per mobile */
+    }
+
+    .contact-us hr{
+        width: 20%;
+    }
+
+    .contact-us h4{
+        margin-left: 2.5%;
+    }
+
+     /* FOOTER */
+
+    footer{
+        text-align: center;
+        background-color: white;
+    }
+    .footer-content{
+        padding: 90px;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .block{
+        width: 33%;
+        padding: 0 3%;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    .block h4, .block h6, .block p{
+        margin: 0;
+        margin-top: 20px;
+        color: #454545;
+    }
+    .block-content{
+        padding-top: 30px;
+    }
+    .fas{
+        margin-left: 5px;
+    }
+    footer p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        font-style: normal;
+        color: #454545;
+        margin: 0;
+    }
+    .stream{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+    }
+    .stream img{
+        padding: 5px;
+
+    }
+    .icon{
+        margin-right: 20px;
+        padding: 15px;
+        height: 15px;
+        width: 15px;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #b0b0b0;
+    }
+    .social{
+        display: flex;
+        margin-top: 30px;
+    }
+    .copyright p{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #454545;
+        background-color: #e9e9e9;
+        padding: 35px 20px 20px 20px;
+        letter-spacing: 2px;
+    }
+
+        /* FOOTER */
+    
+    .footer-content{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block{
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .block-split{
+        display: flex;
+    }
+
+    .block h6{
+        margin-top: 10px;
+    }
+    
+    .stream{
+        justify-content: flex-start;
+    }
+
+    .stream img{
+        padding-right: 10px;
+    }
+
+    .icon{
+        margin-right: 15px;
+    }
+
 }
