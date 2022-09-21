@@ -107,11 +107,13 @@ body {
 
 .blogtable {
     position: relative;
+    height: 74vh;
+    width: 91vw;
 }
 .blog h2{
     font-size: 36px;
     color: white;
-    margin-top: 0;
+    margin-top: 2em;
     margin-bottom: 1em;
 }
 
@@ -125,11 +127,34 @@ body {
     flex-direction: row;
     background-color: white;
 } 
+
+
+
+
 .dish {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-basis: 25%;
+    width: 285px;
+    height: 220px;
+    position: relative;
+}
+
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 95%;
+    top: 40%;
+    z-index: 10;
+}
+
+#sq_ctr {
+    right: 5%;
 }
 
 .title_dish {
@@ -145,8 +170,7 @@ body {
 
 .blogtable hr {
     width: 130px;
-    color: #959595;
-    
+    color: #959595;   
 }
 
 .dish hr {
@@ -154,8 +178,15 @@ body {
 }
 
 #imgblog {
-    width: 81.6%;
     margin: 2.5em auto;
+    inline-size: fit-content;
+    max-width: 1140px;
+}
+
+#but_info{
+    background-color: #ff530a;
+    color: white;
+    text-decoration: none;
 }
 
 #aboutus {
@@ -329,6 +360,7 @@ body {
     bottom: -32px;
     width: 73.5vw;
     padding-top: 20px;
+    z-index: 1;
 }
 ul {
     list-style-type: none;
