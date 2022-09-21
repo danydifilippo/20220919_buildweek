@@ -210,11 +210,13 @@ body {
 #aboutus {
     text-align: center;
     background-color: #f6f6f6;
+    padding-bottom: 4rem;
 }
 
 #aboutus div {
     max-width: 1140px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #aboutus img {
@@ -264,8 +266,9 @@ body {
     font-weight: 400;
     line-height: 26px;
     color: #959595;
-    padding: 0rem 7rem 2.5rem 7rem;
-    margin: 0 auto;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 2rem;
 }
 #menu-title hr {
     text-align: center;
@@ -275,20 +278,44 @@ body {
     font-weight: 400;
     color: #9d9d9d;
 }
+
 /* HEADER */
 
 #menu-container{
     margin: auto 10%;
 }
-
-
-#menu-title p {
+.menu-description {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     color: #959595;
-    margin: 0 12% ;
+    width: 880px;
+    margin: 0 auto ;
+}
+@media screen and (max-width:767px) {
+    #aboutus h1 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    #aboutus span {
+        font-size: 28px;
+        line-height: 31px;
+    }
+    #aboutus p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width:767px) {
+
+    .bordo-bottom {
+        display: none;
+    }
+    .lista-price {
+        display: contents;
+    }
 }
 
 .lista-piatti {
@@ -337,13 +364,12 @@ body {
     color: #333333;
     margin-bottom: 0px;
 }
-#lista p {
-    font-size: 16px;
+#lista .lista-description {
+    font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
-    color: #959595;
+    line-height: 20px;
+    color: #949494;
 }
-
 
 .more-info {
     text-align: center;
@@ -353,13 +379,16 @@ body {
 }
 
 #but_info_2 {
-    background-color: transparent; 
-    color: #ff530a;
-    border: 1px solid #ff530a;
-    transition:1s;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
     text-decoration: none;
-    padding: 2em 3em;
-    width: 189px;
+    padding: 28px 105px;
+    margin: 2rem 0;
+    border-radius: 0px;
+    border: 1px solid #FF4F02;
+    background: none;
+    color: #FF4F02;
 }
 
 #but_info_2:hover {
