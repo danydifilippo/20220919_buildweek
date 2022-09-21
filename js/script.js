@@ -13,7 +13,7 @@ window.onscroll = function () {
       height = "55px";
     } else {
       position = "absolute";
-      top = "441px";
+      top = "65%";
     }
   }
 };
