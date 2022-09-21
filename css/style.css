@@ -329,6 +329,7 @@ body {
     bottom: -32px;
     width: 73.5vw;
     padding-top: 20px;
+    z-index: 1;
 }
 ul {
     list-style-type: none;

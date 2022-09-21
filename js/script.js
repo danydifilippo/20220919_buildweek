@@ -1,15 +1,19 @@
-window.onscroll = function () {
-  myFunction();
+let fixId, fixTop;
+
+window.onload = function () {
+  fixId = document.getElementById("nav-bar");
+  fixTop = fixId.offsetTop;
 };
 
-let navbar = document.getElementById("nav-bar");
-
-let sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
+window.onscroll = function () {
+  with (fixId.style) {
+    if (window.pageYOffset > fixTop) {
+      position = "fixed";
+      top = "0px";
+      height = "55px";
+    } else {
+      position = "absolute";
+      top = "441px";
+    }
   }
-}
+};
