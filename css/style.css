@@ -142,6 +142,7 @@ body {
     height: 220px;
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 
@@ -195,14 +196,10 @@ body {
     width: 189px;
 }
 
-.dish img {
+.dish img:hover {
+    transform: scale(1.5) rotate(10deg);
     transition: 2s ease-in-out;
 }
-
-.dish img:hover {
-    transform: rotate(30deg) scale(1);
-}
-
 #aboutus {
     text-align: center;
     background-color: #f6f6f6;
