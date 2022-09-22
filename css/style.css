@@ -267,6 +267,10 @@ header {
     transform: scale(1.5) rotate(10deg);
     transition: 2s ease-in-out;
 }
+.info-more {
+    display: flex;
+    justify-content: center;
+}
 /* BLOG END */
 /* MENU */
 #menu-title h1 {
@@ -744,7 +748,57 @@ footer p{
     .blogtable {
     margin-bottom: 9em;
 }   
+    .info-more {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+    .dish, .dish img {
+        width: 360px;
+        height: 270px;
+    }
+    .square {
+        right: -4%;
+    }
+    #sq_ctr {
+        right: 96%;
+    }
+}
 
+@media screen and (max-width: 767px){
+    .square {
+        display: none;
+    }
+    .rowblog {
+        display: flex;
+        flex-direction: column;
+    }
+    #imgblog {
+        justify-content: center;
+        margin: 1em;
+    }
+    .blogtable {
+        text-align: center;
+    }
+    #blog h2 span {
+        font-size: 28px;
+    }
+    #blog h2 {
+        font-size: 22px;
+    }
+    .dish {
+        width: 100%;
+    }
+    .dish img {
+        height: 100%;
+    }
+    .title_dish {
+        font-style: 20px;
+    }
+    .descr_dish {
+        font-style: 10px;
+    }
+}
 /* --------------------------------------------------
 RESPONSIVE MATTIA
 -------------------------------------------------- */
