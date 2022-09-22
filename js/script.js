@@ -1,3 +1,4 @@
+
 let fixId, fixTop;
 
 window.onload = function () {
@@ -15,4 +16,6 @@ window.onscroll = function () {
       fixId.style.bottom = "0px";
       fixId.style.top = "unset";
     }
-}
+};
+
+  
