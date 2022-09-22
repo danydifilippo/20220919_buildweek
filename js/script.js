@@ -6,13 +6,13 @@ window.onload = function () {
 };
 
 window.onscroll = function () {
-  console.log(window.pageYOffset, fixTop)
-    if (window.pageYOffset > fixTop) {
-      fixId.style.position = "fixed";
-      fixId.style.top = "0px";
-    } else {
-      fixId.style.position = "absolute";
-      fixId.style.bottom = "0px";
-      fixId.style.top = "unset";
-    }
-}
+  console.log(window.pageYOffset, fixTop);
+  if (window.pageYOffset > fixTop) {
+    fixId.style.position = "fixed";
+    fixId.style.top = "0px";
+  } else {
+    fixId.style.position = "absolute";
+    fixId.style.bottom = "-10px";
+    fixId.style.top = "unset";
+  }
+};
