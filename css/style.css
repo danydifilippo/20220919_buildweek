@@ -166,6 +166,28 @@ header {
     margin-bottom: 2rem;
 }
 /* ABOUT US END */
+
+.slider h3 {
+    display: inline-block;
+    margin: 2em;
+}
+.pag-car {
+    display: none;
+    justify-content: center;
+    width: 1060px;
+    margin: auto;
+}
+
+.pag-car img {
+    width: 265px;
+    object-fit: cover;
+    margin: 0.7em;
+}
+
+.active {
+    display: flex;
+}
+
 /* BLOG */
 #blog {
     position: relative;
