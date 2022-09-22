@@ -255,7 +255,7 @@ header {
     color: white;
     text-decoration: none;
     padding: 2em 3em;
-    width: 189px;
+    width: 285px;
     transition:1s;
 }
 #but_info:hover {
@@ -710,6 +710,41 @@ footer p{
 }
 /* MENU END */
 /* RESPONSIVE LUCA END */
+
+/* RESPONSIVE DANIELA */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .blogtable {
+        margin-top: 3em;
+        margin-bottom: 9em;
+    }    
+    .rowblog {
+        width: 45%;
+        font-size: small;
+    }
+    #imgblog {
+    justify-content: center;
+    position: relative;
+    }
+    .square {
+        right: -6%;
+    }
+    #but_info {
+        width: 22.2%;
+        position: absolute;
+        bottom: -82.2px;
+        right: 5%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    #imgblog {
+        display: block;    
+}
+    .blogtable {
+    margin-bottom: 9em;
+}   
+
 /* --------------------------------------------------
 RESPONSIVE MATTIA
 -------------------------------------------------- */
