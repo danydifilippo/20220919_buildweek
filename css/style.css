@@ -29,7 +29,7 @@ body {
     padding: 25px 40px;
     background: rgba(255, 255, 255, 0.89);
     position: absolute;
-    bottom: -32px;
+    bottom: -15px;
     width: 1140px;
     height: 100px;
     z-index: 10;
@@ -881,7 +881,7 @@ RESPONSIVE MATTIA
     }
 
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 893px) {
 
     /* TYPOGRAPHY */
 
@@ -948,7 +948,7 @@ RESPONSIVE MATTIA
         border:none;
         background-color: #7ec3bb;
         font-family: restaurantfont;
-        font-size: 16px;
+        font-size: 11px;
         font-weight: 600;
         line-height: 23px;
         font-style: normal;
@@ -970,8 +970,8 @@ RESPONSIVE MATTIA
     }
 
     .contact-us .submit{
-        width: 40%;
-        margin-right: 2.3%;
+        width: 95%;
+        margin: auto;
         float:none; /* <--da cambiare la visualizzazione qui per mobile */
     }
 
