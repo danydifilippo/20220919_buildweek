@@ -129,11 +129,12 @@ header {
     object-fit: cover;
     margin: 0.7em;
 }
-.active {
+.activ {
     display: flex;
 }
 /* FINE SLIDER */
 /* ABOUT US */
+
 #aboutus {
     text-align: center;
     background-color: #f6f6f6;
@@ -149,7 +150,6 @@ header {
 #aboutus img {
     margin: 6rem auto 2rem auto;
 }
-
 #aboutus h1 {
     font-size: 36px;
     font-weight: 500;
@@ -630,7 +630,16 @@ footer p{
     letter-spacing: 2px;
 }
 /* FOOTER END */
-
+.fadeinup {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.8s all ease;
+}
+.fadeinup.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 /* RESPONSIVE*/
 
 @media screen and (max-width:1199px) {
