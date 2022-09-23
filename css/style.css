@@ -76,34 +76,35 @@ header {
 } 
 /* FINE HEADER */
 /* SLIDER */
-#slider {
+.carousel2 {
+    display: none;
+}
+.title_carousel {
+    margin: auto;
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider {
     padding: 30px 0px;
 }
-.slider-container {
-    margin-block: 50px;
-    margin-inline: auto;
-    width: 1060px;
-}
-.slider-immagini {
-    overflow: hidden;
-    display: flex;
-}
-.slider-immagini img {
-    width: 235px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-top: 15px;
-}
-.slider-titolo h3 {
+.title_carousel h3 {
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
 }
-.slider-titolo span {
+.title_carousel span {
     color: #ff530a;
+}
+.title_carousel button {
+    background-color: transparent;
+    border: none;
+    color: #959595;
+    font-size: 25px;
 }
 .slider-dots {
     text-align: center;
+    margin: 2.7rem auto;
 }
 .dot {
     cursor: pointer;
@@ -117,6 +118,20 @@ header {
     background-color: black;
     opacity: 0.3;
 } 
+.pag-car {
+    display: none;
+    justify-content: center;
+    width: 1060px;
+    margin: auto;
+}
+.pag-car img {
+    width: 235px;
+    object-fit: cover;
+    margin: 0.7em;
+}
+.active {
+    display: flex;
+}
 /* FINE SLIDER */
 /* ABOUT US */
 #aboutus {
@@ -166,28 +181,6 @@ header {
     margin-bottom: 2rem;
 }
 /* ABOUT US END */
-
-.slider h3 {
-    display: inline-block;
-    margin: 2em;
-}
-.pag-car {
-    display: none;
-    justify-content: center;
-    width: 1060px;
-    margin: auto;
-}
-
-.pag-car img {
-    width: 265px;
-    object-fit: cover;
-    margin: 0.7em;
-}
-
-.active {
-    display: flex;
-}
-
 /* BLOG */
 #blog {
     position: relative;
@@ -638,14 +631,200 @@ footer p{
     letter-spacing: 2px;
 }
 /* FOOTER END */
-/* RESPONSIVE DIMITRI */
-/* HEADER  */
+
+/* RESPONSIVE*/
+
 @media screen and (max-width:1199px) {
+/* HEADER  */
     #nav-bar {
         width: 940px;
     }
+/* MENU */
+    .menu-description {
+        width: 685px;
+    }
+/* BLOG */
+    .title_carousel, .pag-car {
+        width: 860px;
+    }
+    .pag-car img {
+        width: 185px;
+    }
+    .blogtable {
+        margin-top: 3em;
+        margin-bottom: 9em;
+    }    
+    .rowblog {
+        width: 45%;
+        font-size: small;
+    }
+    #imgblog {
+    justify-content: center;
+    position: relative;
+    }
+    .square {
+        right: -6%;
+    }
+    #but_info {
+        width: 22.2%;
+        position: absolute;
+        bottom: -82.2px;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+/* CONTACT US */
+    .contact-us{ 
+        padding: 50px 0px 30px 0px;
+        width: 100%;
+    }
+    .contact-us input, .contact-us textarea{
+        width: 95%;
+    }
+    .contact-us .submit{
+        width: 50%;
+        margin-top: 10px;
+        margin-right: 2.3%;
+    }
+    .contact-us hr{
+        width: 15%;
+    }
+    .contact-us h4{
+        margin-left: 2.5%;
+    }
+/* FOOTER */    
+    .footer-content{
+        padding: 50px 0;
+        display: flex;
+    }
+    .block{
+        width: 33%;
+        padding: 0 2%;
+    }
+    .stream img{
+        padding: 3px;
+    }
+    .icon{
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 893px) {
+/* TYPOGRAPHY */
+    .news h3, .contact-us h3, footer h3{
+        font-size: 30px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+    .news h4, .contact-us h4, footer h4{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .news h6, .contact-us h6, footer h6{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .news strong, .contact-us strong, footer strong{
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .news p, .contact-us p{
+        font-size: 18px;
+        line-height: 20px;
+    }
+/* NEWSLETTER */
+    .news{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        padding: 100px 5%;
+    }
+    .container{
+        width: 100%;
+    }
+    input{ 
+        margin:0px;
+        height: 65px;
+        padding:12px;
+        width: 100%;
+        color: #949692;
+    }
+    .container form{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }    
+    .submit{
+        margin-top: 20px;
+        height: 65px;
+        width: 200px;
+        border:none;
+        background-color: #7ec3bb;
+        font-family: restaurantfont;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 23px;
+        font-style: normal;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }  
+/* CONTACT US */
+    .contact-us{ 
+        padding: 50px 0px 30px 0px;
+        width: 100%;
+    }
+    .contact-us input, .contact-us textarea{
+        width: 95%;
+    }
+    .contact-us .submit{
+        width: 95%;
+        margin: auto;
+        float:none; /* <--da cambiare la visualizzazione qui per mobile */
+    }
+    .contact-us hr{
+        width: 20%;
+    }
+    .contact-us h4{
+        margin-left: 2.5%;
+    }
+/* FOOTER */   
+    .footer-content{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .block{
+        width: 95%;
+        padding: 0 2%;
+    }
+    .block-content{
+        padding-top: 0px;
+    }
+    .block-split{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .block-split>div{
+        padding: 0 5px;
+    }
+    .block h6{
+        margin-top: 10px;
+    }    
+    .stream{
+        justify-content: flex-start;
+    }
+    .stream img{
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+    .icon{
+        margin-right: 15px;
+    }
 }
 @media screen and (max-width:991px) {
+/* HEADER  */
     #nav-bar {
         width: 720px;
         height: 95px;
@@ -653,8 +832,40 @@ footer p{
     li {
         font-size: 12px;
     }
+/* BLOG */
+    .img4{
+        display: none;
+    }
+    .pag-car img {
+        width: 202px;
+    }
+    .title_carousel, .pag-car {
+        width: 640px;
+    }
+    #imgblog {
+        display: block;    
 }
-@media screen and (max-width:767px) {
+    .blogtable {
+    margin-bottom: 9em;
+}   
+    .info-more {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+    .dish, .dish img {
+        width: 360px;
+        height: 270px;
+    }
+    .square {
+        right: -4%;
+    }
+    #sq_ctr {
+        right: 96%;
+    }
+}
+@media screen and (max-width:768px) {
+/* HEADER  */
     #nav-bar {
         width: 90%;
         height: 95px;
@@ -709,11 +920,7 @@ footer p{
     #icon_navbar {
         display: none;
     }
-}
-/* RESPONSIVE DIMITRI END */
-/* RESPONSIVE LUCA */
 /* ABOUT US */
-@media screen and (max-width:767px) {
     #aboutus h1 {
         font-size: 22px;
         line-height: 24px;
@@ -727,77 +934,20 @@ footer p{
         margin-right: 1rem;
         margin-bottom: 2rem;
     }
-}
-/* ABOUT US END */
 /* MENU */
-@media screen and (max-widht:1199px) {
-    .menu-description {
-        width: 685px;
-    }
-}
-@media screen and (max-width:767px) {
-
     .bordo-bottom {
         display: none;
     }
     .lista-price {
         display: contents;
     }
-}
-/* MENU END */
-/* RESPONSIVE LUCA END */
-
-/* RESPONSIVE DANIELA */
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .blogtable {
-        margin-top: 3em;
-        margin-bottom: 9em;
-    }    
-    .rowblog {
-        width: 45%;
-        font-size: small;
+/* BLOG */
+    .img3 {
+        display: none;
     }
-    #imgblog {
-    justify-content: center;
-    position: relative;
+    .pag-car img {
+        width: 304px;
     }
-    .square {
-        right: -6%;
-    }
-    #but_info {
-        width: 22.2%;
-        position: absolute;
-        bottom: -82.2px;
-        right: 5%;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:992px){
-    #imgblog {
-        display: block;    
-}
-    .blogtable {
-    margin-bottom: 9em;
-}   
-    .info-more {
-        display: flex;
-        justify-content: center;
-        margin-top: 2em;
-    }
-    .dish, .dish img {
-        width: 360px;
-        height: 270px;
-    }
-    .square {
-        right: -4%;
-    }
-    #sq_ctr {
-        right: 96%;
-    }
-}
-
-@media screen and (max-width: 767px){
     .square {
         display: none;
     }
@@ -830,204 +980,17 @@ footer p{
     .descr_dish {
         font-style: 10px;
     }
-}
-/* --------------------------------------------------
-RESPONSIVE MATTIA
--------------------------------------------------- */
-@media screen and (max-width: 1010px) {
-
-    /* CONTACT US */
-
-    .contact-us{ 
-        padding: 50px 0px 30px 0px;
-        width: 100%;
-    }
-
-    .contact-us input, .contact-us textarea{
-        width: 95%;
-    }
-
-    .contact-us .submit{
-        width: 50%;
-        margin-top: 10px;
-        margin-right: 2.3%;
-    }
-
-    .contact-us hr{
-        width: 15%;
-    }
-
-    .contact-us h4{
-        margin-left: 2.5%;
-    }
-
-     /* FOOTER */
-    
-    .footer-content{
-        padding: 50px 0;
-        display: flex;
-    }
-
-    .block{
-        width: 33%;
-        padding: 0 2%;
-    }
-
-    .stream img{
-        padding: 3px;
-    }
-    .icon{
-        margin-right: 15px;
-    }
 
 }
-@media screen and (max-width: 893px) {
-
-    /* TYPOGRAPHY */
-
-    .news h3, .contact-us h3, footer h3{
-        font-size: 30px;
-        line-height: 33px;
-        margin-bottom: 10px;
+@media screen and (max-width: 650px){
+/* BLOG */
+    .img2 {
+        display: none;
     }
-
-    .news h4, .contact-us h4, footer h4{
-        font-size: 20px;
-        line-height: 22px;
+    .title_carousel, .pag-car, .pag-car img {
+        width: 271px;
     }
-
-    .news h6, .contact-us h6, footer h6{
-        font-size: 18px;
-        line-height: 20px;
-    }
-
-    .news strong, .contact-us strong, footer strong{
-        font-size: 25px;
-        line-height: 28px;
-    }
-
-    .news p, .contact-us p{
-        font-size: 18px;
-        line-height: 20px;
-        
-    }
-
-
-/* NEWSLETTER */
-
-    .news{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-        padding: 100px 5%;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    input{ 
-        margin:0px;
-        height: 65px;
-        padding:12px;
-        width: 100%;
-        color: #949692;
-    }
-
-    .container form{
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
-
-    
-    .submit{
-        margin-top: 20px;
-        height: 65px;
-        width: 200px;
-        border:none;
-        background-color: #7ec3bb;
-        font-family: restaurantfont;
-        font-size: 11px;
-        font-weight: 600;
-        line-height: 23px;
-        font-style: normal;
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-    
-
-    /* CONTACT US */
-
-    .contact-us{ 
-        padding: 50px 0px 30px 0px;
-        width: 100%;
-    }
-
-    .contact-us input, .contact-us textarea{
-        width: 95%;
-    }
-
-    .contact-us .submit{
-        width: 95%;
-        margin: auto;
-        float:none; /* <--da cambiare la visualizzazione qui per mobile */
-    }
-
-    .contact-us hr{
-        width: 20%;
-    }
-
-    .contact-us h4{
-        margin-left: 2.5%;
-    }
-
-     /* FOOTER */
-   
-    .footer-content{
-        padding: 50px 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .block{
-        width: 95%;
-        padding: 0 2%;
-    }
-
-    .block-content{
-        padding-top: 0px;
-    }
-
-    .block-split{
-        display: flex;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .block-split>div{
-        padding: 0 5px;
-    }
-
-    .block h6{
-        margin-top: 10px;
-    }
-    
-    .stream{
-        justify-content: flex-start;
-    }
-
-    .stream img{
-        padding-right: 10px;
-        padding-top: 20px;
-    }
-
-    .icon{
-        margin-right: 15px;
-    }
-
 }
-/* ----------------------------- 
-fine responsive mattia
--------------------------*/
+
+/*END RESPONSIVE*/
+
