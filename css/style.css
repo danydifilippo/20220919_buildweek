@@ -612,10 +612,10 @@ footer p{
     padding: 10px;
     height: 15px;
     width: 15px;
-    color: white;
+    color: gray;
     text-align: center;
     border-radius: 50%;
-    background-color: #b0b0b0;
+    background-color: white;
 }
 .social{
     display: flex;
