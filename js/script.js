@@ -208,3 +208,9 @@ function fadeblog6() {
 }
 
 window.addEventListener("scroll", fadeblog6);
+
+function gifWelcome() {
+      document.getElementById('sito').style.visibility="visible";
+      document.getElementById('gif_welcome').style.display="none";
+  } 
+
