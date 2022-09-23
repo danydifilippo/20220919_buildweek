@@ -1,4 +1,11 @@
 /* IMPOSTAZIONI GENERALI */
+
+#sito{
+    visibility: hidden;
+}
+#gif_end {
+    visibility: hidden;
+}
 * {
     box-sizing: border-box;
 }
@@ -6,6 +13,50 @@
     font-family:'restaurantfont';
     src: url(../assets/fonts/fontawesome-webfont.eot);
     src: url(../assets/fonts/ufonts.com_tw-cen-mt.ttf);
+}
+
+
+#gif_welcome {
+    font-family: restaurantfont;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transform: scale(2);
+    margin-top: 25em;
+}
+#gif_welcome button {
+    position: absolute;
+    font-family: restaurantfont;
+    border: none;
+    background: linear-gradient(45deg,#19aafd,rgb(127, 212, 255));
+    padding: 1em 2em;
+    font-size: 25px;
+    color: blue;
+}
+.member {
+    position: absolute;
+    font-size: 22px;
+}
+
+#dani {
+    top: 3em;
+    right: 49em;
+    color: #9c74fb;
+}
+#luca {
+    top: 8em;
+    right: 49.5em;
+    color: #15aefe;
+}
+#dimi {
+    top: 12.5em;
+    left: 53.5em;
+    color: #07b66a;
+}
+#matty {
+    top: 7.8em;
+    left: 48em;
+    color: #fcc326;
 }
 
 body {

@@ -29,3 +29,8 @@ const avantiPagina = function() {
       prossimaPagina.classList.add("active")
   }
 }
+
+function gifWelcome() {
+      document.getElementById('sito').style.visibility="visible";
+      document.getElementById('gif_welcome').style.display="none";
+  } 
