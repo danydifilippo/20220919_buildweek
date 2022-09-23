@@ -641,35 +641,14 @@ footer p{
     }
 /* MENU */
     .menu-description {
-        width: 685px;
+        max-width: 685px;
     }
-/* BLOG */
+/* SLIDER */
     .title_carousel, .pag-car {
         width: 860px;
     }
     .pag-car img {
         width: 185px;
-    }
-    .blogtable {
-        margin-top: 3em;
-        margin-bottom: 9em;
-    }    
-    .rowblog {
-        width: 45%;
-        font-size: small;
-    }
-    #imgblog {
-    justify-content: center;
-    position: relative;
-    }
-    .square {
-        right: -6%;
-    }
-    #but_info {
-        width: 22.2%;
-        position: absolute;
-        bottom: -82.2px;
-        right: 5%;
     }
 }
 
@@ -832,7 +811,7 @@ footer p{
     li {
         font-size: 12px;
     }
-/* BLOG */
+/* SLIDER */
     .img4{
         display: none;
     }
@@ -841,27 +820,6 @@ footer p{
     }
     .title_carousel, .pag-car {
         width: 640px;
-    }
-    #imgblog {
-        display: block;    
-}
-    .blogtable {
-    margin-bottom: 9em;
-}   
-    .info-more {
-        display: flex;
-        justify-content: center;
-        margin-top: 2em;
-    }
-    .dish, .dish img {
-        width: 360px;
-        height: 270px;
-    }
-    .square {
-        right: -4%;
-    }
-    #sq_ctr {
-        right: 96%;
     }
 }
 @media screen and (max-width:768px) {
@@ -941,13 +899,76 @@ footer p{
     .lista-price {
         display: contents;
     }
-/* BLOG */
+/* slider */
     .img3 {
         display: none;
     }
     .pag-car img {
         width: 304px;
     }
+
+}
+@media screen and (max-width: 650px){
+/* BLOG */
+    .img2 {
+        display: none;
+    }
+    .title_carousel, .pag-car, .pag-car img {
+        width: 271px;
+    }
+}
+
+/*END RESPONSIVE*/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .blogtable {
+        margin-top: 3em;
+        margin-bottom: 9em;
+    }    
+    .rowblog {
+        width: 45%;
+        font-size: small;
+    }
+    #imgblog {
+    justify-content: center;
+    position: relative;
+    }
+    .square {
+        right: -6%;
+    }
+    #but_info {
+        width: 22.2%;
+        position: absolute;
+        bottom: -82.2px;
+        right: 5%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    #imgblog {
+        display: block;    
+}
+    .blogtable {
+    margin-bottom: 9em;
+}   
+    .info-more {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+    .dish, .dish img {
+        width: 360px;
+        height: 270px;
+    }
+    .square {
+        right: -4%;
+    }
+    #sq_ctr {
+        right: 96%;
+    }
+}
+
+@media screen and (max-width: 767px){
     .square {
         display: none;
     }
@@ -980,17 +1001,4 @@ footer p{
     .descr_dish {
         font-style: 10px;
     }
-
 }
-@media screen and (max-width: 650px){
-/* BLOG */
-    .img2 {
-        display: none;
-    }
-    .title_carousel, .pag-car, .pag-car img {
-        width: 271px;
-    }
-}
-
-/*END RESPONSIVE*/
-
