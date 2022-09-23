@@ -608,7 +608,6 @@ footer p{
 }
 .icon{
     box-sizing: content-box;
-    margin-right: 30px;
     padding: 10px;
     height: 15px;
     width: 15px;
@@ -619,7 +618,7 @@ footer p{
 }
 .social{
     display: flex;
-    margin-top: 30px;
+    gap: 0px 20px;
 }
 .copyright p{
     font-size: 12px;
