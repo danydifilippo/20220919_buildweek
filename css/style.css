@@ -640,6 +640,117 @@ footer p{
     transform: translateY(0);
     opacity: 1;
   }
+.fadeinright {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.8s all ease;
+    
+}
+.fadeinright.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+.fadeinright2 {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.8s all ease;
+    
+}
+.fadeinright2.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 1s;
+  }
+  .fadeinright3 {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.8s all ease;
+    
+}
+.fadeinright3.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 1.5s;
+  }
+.fadeblog {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.2s all ease;
+    
+}
+.fadeblog.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+  .fadeblog2 {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.2s all ease;
+    
+}
+.fadeblog2.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.4s;
+  }
+  .fadeblog3 {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.2s all ease;
+    
+}
+.fadeblog3.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.6s;
+  }
+  .fadeblog4 {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.2s all ease;
+    
+}
+.fadeblog4.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.8s;
+  }
+  .fadeblog5 {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.2s all ease;
+    
+}
+.fadeblog5.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 1s;
+  }
+  .fadeblog6 {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.2s all ease;
+    
+}
+.fadeblog6.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 1.2s;
+  }
+
+
+
 /* RESPONSIVE*/
 
 @media screen and (max-width:1199px) {
