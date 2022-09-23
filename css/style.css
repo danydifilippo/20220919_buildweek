@@ -29,7 +29,7 @@ body {
     padding: 25px 40px;
     background: rgba(255, 255, 255, 0.89);
     position: absolute;
-    bottom: -32px;
+    bottom: -15px;
     width: 1140px;
     height: 100px;
     z-index: 10;
@@ -859,7 +859,7 @@ RESPONSIVE MATTIA
     }
 
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 893px) {
 
     /* TYPOGRAPHY */
 

@@ -12,7 +12,7 @@ window.onscroll = function () {
     fixId.style.top = "0px";
   } else {
     fixId.style.position = "absolute";
-    fixId.style.bottom = "-10px";
+    fixId.style.bottom = "-15px";
     fixId.style.top = "unset";
   }
 };
