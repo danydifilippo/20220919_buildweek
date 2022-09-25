@@ -1,4 +1,11 @@
 /* IMPOSTAZIONI GENERALI */
+
+#sito{
+    visibility: hidden;
+}
+#gif_end {
+    visibility: hidden;
+}
 * {
     box-sizing: border-box;
 }
@@ -7,7 +14,71 @@
     src: url(../assets/fonts/fontawesome-webfont.eot);
     src: url(../assets/fonts/ufonts.com_tw-cen-mt.ttf);
 }
+#gif_welcome {
+    font-family: restaurantfont;
+    background-image: url(../assets/images/welcome.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 100vw;
+    height: 100vh;
+}
+#gif_welcome::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/overlay-pattern.png);
+    background-color: rgba(255, 255, 255, 0.441);
+}
 
+#gif_welcome button {
+    font-family: restaurantfont;
+    border: none;
+    background: linear-gradient(45deg,#19aafd,rgb(127, 212, 255));
+    padding: 1em 2em;
+    font-size: 30px;
+    color: blue;
+    line-height: 0px;
+    margin: 2em auto 0.5em auto;
+    display: block;
+    box-shadow: 4px 4px 10px rgb(49, 92, 247);
+    position: relative;
+}
+.member {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 9.5em;
+    font-weight: bold;
+    transition: 4s;
+    animation-name: nome_;
+    animation-iteration-count: infinite;
+    position: relative;
+    text-shadow: 6px 6px 6px #fffdfd;
+}
+#dani {
+    color: #9c74fb;
+}
+#luca {
+    color: #15aefe;
+}
+#dimi {
+    color: #07b66a;
+}
+#matty {
+    color: #dd8f08;
+}
+.img_memb {
+    position: relative;
+    text-align: center;
+}
+@keyframes nome_ {
+    from {display: none;}
+    to {display: block;}
+}
 body {
     margin: 0;
     font-family: restaurantfont;
